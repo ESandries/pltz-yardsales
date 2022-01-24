@@ -1,0 +1,34 @@
+@import "../../styles/variables.scss";
+
+.Categories_Container {
+  font-family: "Quicksand", sans-serif;
+  ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 12px;
+    .Categories_Name {
+      padding: 4px 10px;
+      border-radius: 10px;
+      background-color: $white;
+      color: $VeryLightPink;
+      align-items: center;
+      margin: 0;
+      &:hover {
+        color: $hospitalGreen;
+        border: 1px solid $hospitalGreen;
+      }
+    }
+    .Categories_activate {
+      color: $hospitalGreen;
+      border: 1px solid $hospitalGreen;
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .Categories_Container {
+    display: none;
+  }
+}
